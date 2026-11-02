@@ -101,10 +101,10 @@
             <th rowspan="2">Level</th>
 			<th colspan="2">Academic Information</th>
         </tr>
-		
-        <tr>
-            <th>Institution</th>
+			<th>Institution</th>
             <th>Details</th>
+        <tr>
+            
         </tr>
 
         <tr>
@@ -204,7 +204,7 @@
 
         <li>
             Join the
-            <a href="https://discord.gg/G4eZeWCxk" target="_blank">
+            <a href="https://discord.gg/DrbyuXnzH" target="_blank">
                 CSE 391 Discord
             </a>.
         </li>
@@ -236,18 +236,21 @@
 <section id="contact">
     <h2>Contact Me</h2>
 
-    <form action="mailto:tamjeed.abdullah.noor@g.bracu.ac.bd" method="post" enctype="text/plain">
-
-        <label>Name:</label><br>
-        <input type="text" name="Name" required><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="Email" required><br><br>
-
-        <label>Message:</label><br>
-        <textarea name="Message" rows="5" cols="40" required></textarea><br><br>
-
-        <input type="submit" value="Send Email">
+    <form action="send_email.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+ 
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+ 
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea>
+		<br>
+ 
+		<input type="submit" value="Send">
+</form>
 
     </form>
 </section>
